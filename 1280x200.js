@@ -669,8 +669,8 @@ lib.properties = {
 	color: "#109722",
 	opacity: 1.00,
 	manifest: [
-		{src:"Bitmap1.png", id:"Bitmap1"},
-		{src:"Bitmap2.png", id:"Bitmap2"}
+		{src:"/sites/default/files/animated_banners/bitmap1_1.png", id:"Bitmap1"},
+		{src:"/sites/default/files/animated_banners/bitmap2_1.png", id:"Bitmap2"}
 	],
 	preloads: []
 };
