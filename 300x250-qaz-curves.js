@@ -2542,9 +2542,9 @@ lib.properties = {
 	color: "#00A65B",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap3.png", id:"Bitmap3"},
-		{src:"images/Bitmap4.png", id:"Bitmap4"},
-		{src:"images/Bitmap6.png", id:"Bitmap6"}
+		{src:"/sites/default/files/animated_banners/bitmap3_1.png", id:"Bitmap3"},
+		{src:"/sites/default/files/animated_banners/bitmap4.png", id:"Bitmap4"},
+		{src:"/sites/default/files/animated_banners/bitmap6.png", id:"Bitmap6"}
 	],
 	preloads: []
 };
