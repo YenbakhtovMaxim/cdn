@@ -442,7 +442,7 @@ lib.properties = {
 	color: "#1D962B",
 	opacity: 1.00,
 	manifest: [
-		{src:"Bitmap1.png", id:"Bitmap1"}
+		{src:"/sites/default/files/animated_banners/bitmap1_2.png", id:"Bitmap1"}
 	],
 	preloads: []
 };
