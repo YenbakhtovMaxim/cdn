@@ -2621,7 +2621,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,386,405);
 
 
 // stage content:
-(lib._300x250curves = function(mode,startPosition,loop) {
+(lib._300x250curves_edata = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
