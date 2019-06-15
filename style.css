@@ -1972,5 +1972,9 @@ background-color: #ffffff;
   top: 70px;
 }
 .cd-h-timeline__line li.bottom a:after{
-  top: -75px;
+  top: -78px;
+}
+.js .cd-h-timeline__date{
+  font-size: 18px;
+  text-transform: uppercase;
 }
