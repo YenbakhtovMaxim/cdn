@@ -1,24 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic");
 *,*::after,*::before {
  box-sizing:inherit
 }
-* {
- font:inherit
-}
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,hr {
- margin:0;
- padding:0;
- border:0
-}
 html {
  box-sizing:border-box
-}
-body {
- background-color:hsl(0, 0%, 100%);
- background-color:var(--color-bg, white)
-}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main,form legend {
- display:block
 }
 ol,ul {
  list-style:none
@@ -58,7 +42,7 @@ table {
 img,video,svg {
  max-width:100%
 }
-:root,[data-theme="default"] {
+.cd-h-timeline,.cd-h-timeline[data-theme="default"] {
  --color-primary-darker:hsl(220, 90%, 36%);
  --color-primary-darker-h:220;
  --color-primary-darker-s:90%;
@@ -192,13 +176,13 @@ img,video,svg {
  --color-contrast-higher-s:8%;
  --color-contrast-higher-l:12%
 }
-[data-theme] {
+.cd-h-timeline[data-theme] {
  background-color:hsl(0, 0%, 100%);
  background-color:var(--color-bg);
  color:hsl(240, 4%, 20%);
  color:var(--color-contrast-high)
 }
-:root {
+.cd-h-timeline {
  --space-unit:  1em;
  --space-xxxxs: calc(0.125*var(--space-unit));
  --space-xxxs:  calc(0.25*var(--space-unit));
@@ -215,7 +199,7 @@ img,video,svg {
 }
 @supports (--css: variables) {
  @media (min-width: 64rem) {
-  :root {
+  .cd-h-timeline {
    --space-unit:  1.25em
   }
  }
@@ -308,7 +292,7 @@ img,video,svg {
  margin-bottom:13.75em;
  margin-bottom:var(--space-xxxxl)
 }
-:root {
+.cd-h-timeline {
  --container-width-xs: 37.5rem;
  --container-width-sm: 45rem;
  --container-width-md: 64rem;
@@ -1014,7 +998,7 @@ img,video,svg {
  -ms-flex-negative:0;
  flex-shrink:0
 }
-:root {
+.cd-h-timeline {
  --radius: 0.25em;
  --shadow-sm: 0 1px 1px rgba(0, 0, 0, .2), 0 1px 8px rgba(0, 0, 0, .1);
  --shadow-md: 0 1px 8px rgba(0, 0, 0, .1), 0 8px 24px rgba(0, 0, 0, .15);
@@ -1024,7 +1008,7 @@ img,video,svg {
  --transition-ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
  --transition-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1)
 }
-:root {
+.cd-h-timeline {
  --font-primary: sans-serif;
  --text-base-size: 1em;
  --text-scale-ratio: 1.2;
@@ -1041,43 +1025,30 @@ img,video,svg {
 }
 @supports (--css: variables) {
  @media (min-width: 64rem) {
-  :root {
+  .cd-h-timeline {
    --text-base-size: 1.25em;
    --text-scale-ratio: 1.25
   }
  }
 }
-body {
- font-size:1em;
- font-size:var(--text-base-size);
- font-family:'Fira Sans', sans-serif;
- font-family:var(--font-primary);
- color:hsl(240, 4%, 20%);
- color:var(--color-contrast-high)
-}
-h1,h2,h3,h4 {
- color:hsl(240, 8%, 12%);
- color:var(--color-contrast-higher);
- line-height:1.2;
- line-height:var(--heading-line-height)
-}
+
 .text--xxxl {
  font-size:2.48832em;
  font-size:var(--text-xxxl)
 }
-h1,.text--xxl {
+.cd-h-timeline h1,.text--xxl {
  font-size:2.0736em;
  font-size:var(--text-xxl)
 }
-h2,.text--xl {
+.cd-h-timeline h2,.text--xl {
  font-size:1.728em;
  font-size:var(--text-xl)
 }
-h3,.text--lg {
+.cd-h-timeline h3,.text--lg {
  font-size:1.44em;
  font-size:var(--text-lg)
 }
-h4,.text--md {
+.cd-h-timeline h4,.text--md {
  font-size:1.2em;
  font-size:var(--text-md)
 }
@@ -1089,23 +1060,23 @@ h4,.text--md {
  font-size:0.69444em;
  font-size:var(--text-xs)
 }
-a,.link {
+.cd-h-timeline a,.link {
  color:hsl(220, 90%, 56%);
  color:var(--color-primary);
  text-decoration:underline
 }
-mark {
+.cd-h-timeline mark {
  background-color:hsl(355, 90%, 81%);
  background-color:var(--color-accent-lighter);
  color:inherit
 }
-strong {
+.cd-h-timeline strong {
  font-weight:bold
 }
-s {
+.cd-h-timeline s {
  text-decoration:line-through
 }
-u {
+.cd-h-timeline u {
  text-decoration:underline
 }
 .text--subtle,.text-component .text--subtle {
@@ -1254,7 +1225,7 @@ u {
  text-indent:100%;
  white-space:nowrap
 }
-:root {
+.cd-h-timeline {
  --icon-xs: 16px;
  --icon-sm: 24px;
  --icon-md: 32px;
@@ -1336,7 +1307,7 @@ u {
  color:inherit;
  fill:currentColor
 }
-:root {
+.cd-h-timeline {
  --btn-font-size: 1em;
  --btn-sm: calc(var(--btn-font-size) - 0.2em);
  --btn-md: calc(var(--btn-font-size) + 0.2em);
@@ -1565,7 +1536,7 @@ u {
  margin:0 1.25em 1.25em 0;
  margin:0 var(--space-md) var(--space-md) 0
 }
-:root {
+.cd-h-timeline {
  --zindex-header: 2;
  --zindex-popover: 4;
  --zindex-fixed-element: 5;
@@ -1621,7 +1592,7 @@ u {
   display:none !important
  }
 }
-:root {
+.cd-h-timeline {
  --display: block
 }
 .is-visible {
@@ -1643,7 +1614,7 @@ u {
  border:0;
  white-space:nowrap
 }
-:root {
+.cd-h-timeline {
  --cd-color-1:hsl(0, 0%, 22%);
  --cd-color-1-h:0;
  --cd-color-1-s:0%;
@@ -1658,12 +1629,6 @@ u {
  --cd-color-3-l:97%;
  --font-primary: 'Fira Sans', sans-serif;
  --font-secondary: 'Playfair Display', serif
-}
-body {
- color:hsl(0, 0%, 22%);
- color:var(--cd-color-1);
- background-color:hsl(0, 0%, 97%);
- background-color:var(--cd-color-3)
 }
 .js .cd-h-timeline {
  opacity:0;
@@ -1958,9 +1923,7 @@ body {
   transform:translateX(0%)
  }
 }
-html:not(.js) .cd-h-timeline__dates,html:not(.js) .cd-h-timeline__navigation {
- display:none
-}
+
 .cd-h-timeline__events {
   box-shadow: 0px 13px 24px rgba(0,0,0,0.18);
 background-color: #ffffff;
