@@ -351,12 +351,12 @@ THE SOFTWARE.
 					u = -25;
 					c = -120;
 				}else if(i == 1){
-					c = -330;
+					c = 10;
 				}else if(i == 0){
 					u = -25;
 				}
 				else if(i == 4){
-					c = 300;
+					c = 100;
 					u = -2;
 				}
 				else if(i == 5){
